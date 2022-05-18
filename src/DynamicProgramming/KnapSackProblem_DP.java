@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class KnapSackProblem_DP {
     public static int KnapSackProblem(int W, int wt[], int val[], int n){
         int[][] dp = new int[n+1][W+1];

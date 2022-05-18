@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class CoinChangeProblem_DP {
     public static long  CoinChangeProblem(int S[], int m, int n){
         long[][] dp = new long[m+1][n+1];

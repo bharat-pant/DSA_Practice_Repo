@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class GoldMineProblem_DP {
     public static int recursion(int[][] arr, int n, int m, int x_index, int y_index, int[][] dp) {
         if (x_index < 0 || x_index >= n || y_index >= m) {

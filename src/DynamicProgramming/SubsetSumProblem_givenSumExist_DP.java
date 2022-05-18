@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class SubsetSumProblem_givenSumExist_DP {
     static Boolean isSubsetSum(int N, int arr[], int sum){
         boolean[][] dp = new boolean[N+1][sum+1];

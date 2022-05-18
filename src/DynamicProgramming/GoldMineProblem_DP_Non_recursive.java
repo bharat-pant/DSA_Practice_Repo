@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class GoldMineProblem_DP_Non_recursive {
 
     public static int goldMinePro(int n, int m, int[][] arr){

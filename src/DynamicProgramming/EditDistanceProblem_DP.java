@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class EditDistanceProblem_DP {
     public static int editDistance (String s, String t){
         int n = s.length();

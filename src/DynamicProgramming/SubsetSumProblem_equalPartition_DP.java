@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class SubsetSumProblem_equalPartition_DP {
     public static int subsetSum_equalPartition(int N, int arr[]){
         int sum = 0;

@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class FriendsPairProblem_DP {
     public static long friendsPair(int n){
         long[] dp = new long[n+2];

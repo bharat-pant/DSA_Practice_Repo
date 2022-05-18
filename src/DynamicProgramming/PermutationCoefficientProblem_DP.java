@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 import static java.lang.Math.min;
 
 public class PermutationCoefficientProblem_DP {
