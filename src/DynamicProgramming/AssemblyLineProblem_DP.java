@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 public class AssemblyLineProblem_DP {
     public static int assemblyLine(int n, int[][] a, int[][] T, int[] e, int[] x){
         int[] line1 = new int[n];
