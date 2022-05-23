@@ -2,7 +2,7 @@ package DynamicProgramming;
 
 public class LongestCommonSubsequence_DP {
 
-    public static int recursion(int x, int y, String s1, String s2, int i, int j, int[][] dp) {
+    public static int recursion(String s1, String s2, int i, int j, int[][] dp) {
         if (i >= s1.length() || j >= s2.length()) {
             return 0;
         }
@@ -12,9 +12,9 @@ public class LongestCommonSubsequence_DP {
         }
 
         if (s1.charAt(i) == s2.charAt(j)) {
-            return dp[i][j] = (1 + recursion(x, y, s1, s2, i + 1, j + 1, dp));
+            return dp[i][j] = (1 + recursion(s1, s2, i + 1, j + 1, dp));
         } else {
-            return dp[i][j] = Math.max(recursion(x, y, s1, s2, i + 1, j, dp), recursion(x, y, s1, s2, i, j + 1, dp));
+            return dp[i][j] = Math.max(recursion(s1, s2, i + 1, j, dp), recursion(s1, s2, i, j + 1, dp));
         }
     }
 
@@ -26,7 +26,7 @@ public class LongestCommonSubsequence_DP {
                 dp[i][j] = -1;
             }
         }
-        return recursion(x, y, s1, s2, 0, 0, dp);
+        return recursion(s1, s2, 0, 0, dp);
     }
 
     public static void main(String[] args) {
